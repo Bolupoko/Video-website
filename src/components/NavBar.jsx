@@ -1,6 +1,7 @@
 function NavBar() {
     return(
         <>
+        <dev>test</dev>
         </>
     );
 }

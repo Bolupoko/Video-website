@@ -1,11 +1,11 @@
 import NavBar from "./components/NavBar";
 
 function App() {
-  reeturn(
+  return (
     <>
       <NavBar />
       <div>Bolu Hello word</div>
-    </>,
+    </>
   );
 }
 
