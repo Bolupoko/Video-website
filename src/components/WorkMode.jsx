@@ -2,6 +2,8 @@ import { GrSend } from "react-icons/gr";
 import { MdMovieEdit } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa6";
 import { FaRegFileVideo } from "react-icons/fa";
+import Reveal from "./Reveal"
+
 function WorkMode(){
     return(
         <div>
@@ -14,8 +16,10 @@ function WorkMode(){
                <div className="flex flex-col md:flex-row gap-12  justify-center items-center text-center">
 
                 <div className="flex flex-col gap-4 items-center">
-                     <icon className="flex justify-center text-center items-center  text-white text-4xl border border-2 rounded-full shrink-0 size-40 "><GrSend />
+                    <Reveal>
+                         <icon className="flex justify-center text-center items-center  text-white text-4xl border border-2 rounded-full shrink-0 size-40 "><GrSend />
             </icon>
+                    </Reveal>
 
             <h4 className="text-white font-bold uppercase text-sm underline underline-offset-6 ">Send us your footage and your story</h4>
 
@@ -23,19 +27,23 @@ function WorkMode(){
                 </div>
 
             <div className="flex flex-col gap-4 items-center">
-                <icon className="flex justify-center text-center items-center  text-white text-5xl border border-2 rounded-full shrink-0 size-40 ">
+                <Reveal>
+                    <icon className="flex justify-center text-center items-center  text-white text-5xl border border-2 rounded-full shrink-0 size-40 ">
                 <MdMovieEdit />
             </icon>
 
+                </Reveal>
              <h4 className="text-white font-bold uppercase text-sm underline underline-offset-6">We edit your first draft</h4>
 
              <p className="text-white text-center md:max-w-80">We cut the best moments, add music, fix colors and sound, and put it together as a story.</p>
             </div>
 
             <div className="flex flex-col gap-4 items-center">
-                 <icon  className="flex justify-center text-center items-center  text-white text-5xl border border-2 rounded-full shrink-0 size-40 ">
+                 <Reveal>
+                    <icon  className="flex justify-center text-center items-center  text-white text-5xl border border-2 rounded-full shrink-0 size-40 ">
                 <FaRegEye />
              </icon>
+                 </Reveal>
 
              <h4 className="text-white font-bold uppercase text-sm underline underline-offset-6">You review, we adjust</h4>
 
@@ -45,10 +53,12 @@ function WorkMode(){
 
 
             <div className="flex flex-col gap-4 items-center">
-                 <icon className="flex justify-center text-center items-center  text-white text-5xl border border-2 rounded-full shrink-0 size-40 ">
+                <Reveal>
+                     <icon className="flex justify-center text-center items-center  text-white text-5xl border border-2 rounded-full shrink-0 size-40 ">
                 <FaRegFileVideo />
              </icon>
 
+                </Reveal>
               <h4 className="text-white font-bold uppercase text-sm underline underline-offset-6">You get your final video</h4>
 
                <p className="text-white text-center md:max-w-80">We send the finished video in the format you need, ready to share or keep.</p>
@@ -56,11 +66,7 @@ function WorkMode(){
                </div>
             </div>
 
-            
-
-            
-
-            
+                                   
         </div>
     )
 }

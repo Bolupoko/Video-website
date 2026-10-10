@@ -3,6 +3,7 @@ import Background from "./components/Background";
 import Header from "./components/Header";
 import About from "./components/About";
 import WorkMode from "./components/WorkMode";
+import OurWork from "./components/OurWork";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <About />
       <WorkMode />
+      <OurWork />
      </div>
     </div>
   );
